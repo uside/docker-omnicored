@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV OMNICORE_VERSION=0.7.0
-ENV OMNICORE_CHECKSUM=db71b1e3f135bd713c8c8e91738834d538fad8a5676036aa6bbdb6f5197bbe59
+ENV OMNICORE_VERSION=0.7.1
+ENV OMNICORE_CHECKSUM=c2334e2d776ac0324c91f5e4fd631183e7ee2841ca47ad51d0048ce022e9cdf2
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://github.com/OmniLayer/omnicore/releases/download/v${OMNICORE_VERSION}/omnicore-${OMNICORE_VERSION}-x86_64-linux-gnu.tar.gz \
